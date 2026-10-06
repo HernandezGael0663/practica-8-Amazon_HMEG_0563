@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diseño Estilo Tienda</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      background-color: #e3e6e6;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    
+    header {
+      background: #131921;
+      color: white;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+    }
+
+    header div {
+      margin-right: 10px;
+    }
+
+    header input {
+      flex: 1;
+      padding: 8px;
+      pointer-events: none;
+    }
+    
+    nav {
+      background: #232f3e;
+      color: white;
+      padding: 8px 10px;
+      font-size: 14px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .form-contenedor {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      width: 350px;
+      margin: 40px auto;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    form label {
+      margin-bottom: 5px;
+    }
+
+    form input[type="text"],
+    form input[type="password"] {
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+
+    .botones {
+      display: flex;
+      margin-top: 10px;
+    }
+
+    form input[type="submit"],
+    form input[type="reset"] {
+      padding: 8px;
+      border: none;
+      border-radius: 4px;
+    }
+
+    form input[type="submit"] {
+      background-color: #febd69;
+      flex: 1;
+      margin-right: 10px;
+    }
+
+    form input[type="reset"] {
+      background-color: #e7e9ec;
+    }
+    
+    footer {
+      background-color: #131921;
+      color: white;
+      text-align: center;
+      padding: 5px 10px;
+      font-size: 12px;
+      width: 100%;
+      box-sizing: border-box;
+      margin-top: auto;
+    }
+
+    footer p {
+      margin: 3px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div><b>Amazon</b></div>
+    <input type="text" placeholder="Buscar productos..." readonly>
+  </header>
+
+  <nav>
+    <a href="index.html">Inicio</a> | Ofertas | Categorías | Contacto
+  </nav>
+
+  <div class="form-contenedor">
+    <form action="" method="get">
+      <label>Ingresa tu usuario:</label>
+      <input type="text" name="usuario">
+
+      <label>Ingresa tu contraseña:</label>
+      <input type="password" name="contraseña">
+
+      <div class="botones">
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Borrar">
+      </div>
+    </form>
+  </div>
+
+  <footer>
+    <p>Hernández Mijares Edwin Gael</p>
+    <p>24308051280563 | 5°I</p>
+  </footer>
+
+</body>
+</html>

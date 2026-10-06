@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diseño Estilo Tienda</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      background-color: #e3e6e6;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    
+    header {
+      background: #131921;
+      color: white;
+      padding: 10px;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+
+    header input {
+      flex: 1;
+      padding: 8px;
+    }
+
+    header button {
+      padding: 8px 12px;
+      background-color: #febd69;
+      border: none;
+    }
+    
+    nav {
+      background: #232f3e;
+      color: white;
+      padding: 8px 10px;
+      font-size: 14px;
+    }
+
+    .logo {
+      color: #111;
+      background-color: #febd69;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 4px 10px;
+      border-radius: 4px;
+      margin-left: 5px;
+    }
+
+    .logo:hover {
+      background-color: #f3a847;
+    }
+
+    .contenedor {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      padding: 15px;
+      flex: 1;
+    }
+    
+    .cuadro {
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+      flex: 1 1 220px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .cuadro h2 {
+      font-size: 20px;
+      margin: 0 0 10px 0;
+    }
+
+    .cuadro img {
+      width: 100%;
+      height: 380px;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+
+    footer {
+      background-color: #131921;
+      color: white;
+      text-align: center;
+      padding: 5px 10px;
+      font-size: 12px;
+      width: 100%;
+      box-sizing: border-box;
+      margin-top: auto;
+    }
+
+    footer p {
+      margin: 3px 0;
+    }
+  </style>
+</head>
+<body>
+
+ <header>
+    <div><b>Amazon</b></div>
+    <input type="text" placeholder="Buscar productos..." readonly>
+ </header>
+
+  <nav>
+    Inicio | Ofertas | Categorías | <a href="formulario.html" class="logo">INICIAR SESIÓN</a>
+  </nav>
+
+  <div class="contenedor">
+
+    <div class="cuadro">
+      <h2>Imprescindibles para la cocina</h2>
+      <img src="cocina.png" alt="cocina">
+    </div>
+
+    <div class="cuadro">
+      <h2>Todo para tu belleza</h2>
+      <img src="belleza.png" alt="belleza">
+    </div>
+
+    <div class="cuadro">
+      <h2>Empieza a lucirte</h2>
+      <img src="ropa.png" alt="ropa">
+    </div>
+
+    <div class="cuadro">
+      <h2>Juguetes y más</h2>
+      <img src="juguetes.png" alt="juguetes">
+    </div>
+
+  </div>
+
+  <footer>
+    <p>Hernández Mijares Edwin Gael</p>
+    <p>24308051280563 | 5°I</p>
+  </footer>
+
+</body>
+</html>
