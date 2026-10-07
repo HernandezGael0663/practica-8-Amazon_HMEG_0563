@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Formulario Contraseña Amazon</title>
+  <title>Iniciar Sesión - Amazon</title>
   <style>
     body {
       font-family: sans-serif;
@@ -58,6 +58,12 @@
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
 
+    .form-contenedor h2 {
+      margin-top: 0;
+      margin-bottom: 15px;
+      font-size: 22px;
+    }
+
     form {
       display: flex;
       flex-direction: column;
@@ -65,6 +71,8 @@
 
     form label {
       margin-bottom: 5px;
+      font-size: 14px;
+      font-weight: bold;
     }
 
     form input[type="text"],
@@ -85,6 +93,7 @@
       padding: 8px;
       border: none;
       border-radius: 4px;
+      cursor: pointer;
     }
 
     form input[type="submit"] {
@@ -95,6 +104,36 @@
 
     form input[type="reset"] {
       background-color: #e7e9ec;
+    }
+
+    .seccion-registro {
+      margin-top: 20px;
+      border-top: 1px solid #e7e7e7;
+      padding-top: 15px;
+      text-align: center;
+    }
+
+    .seccion-registro p {
+      font-size: 12px;
+      color: #565959;
+      margin-bottom: 10px;
+    }
+
+    .btn-registrar {
+      display: block;
+      width: 100%;
+      padding: 8px 0;
+      background-color: #e7e9ec;
+      border: 1px solid #adb1b8;
+      border-radius: 4px;
+      color: #111;
+      text-decoration: none;
+      font-size: 13px;
+      box-sizing: border-box;
+    }
+
+    .btn-registrar:hover {
+      background-color: #d5d9d9;
     }
     
     footer {
@@ -125,18 +164,25 @@
   </nav>
 
   <div class="form-contenedor">
+    <h2>Iniciar sesión</h2>
+    
     <form action="" method="get">
-      <label>Ingresa tu usuario:</label>
-      <input type="text" name="usuario">
+      <label>E-mail o nombre de usuario:</label>
+      <input type="text" name="usuario" required>
 
-      <label>Ingresa tu contraseña:</label>
-      <input type="password" name="contraseña">
+      <label>Contraseña:</label>
+      <input type="password" name="contraseña" required>
 
       <div class="botones">
-        <input type="submit" value="Enviar">
+        <input type="submit" value="Iniciar sesión">
         <input type="reset" value="Borrar">
       </div>
     </form>
+
+    <div class="seccion-registro">
+      <p>¿Eres nuevo en Amazon?</p>
+      <a href="registro.html" class="btn-registrar">Crea tu cuenta de Amazon</a>
+    </div>
   </div>
 
   <footer>
