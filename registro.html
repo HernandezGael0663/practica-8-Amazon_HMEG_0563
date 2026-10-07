@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Datos de Registro</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      background-color: #e3e6e6;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    
+    header {
+      background: #131921;
+      color: white;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+    }
+
+    header div {
+      margin-right: 10px;
+    }
+
+    header input {
+      flex: 1;
+      padding: 8px;
+      pointer-events: none;
+    }
+    
+    nav {
+      background: #232f3e;
+      color: white;
+      padding: 8px 10px;
+      font-size: 14px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .form-contenedor {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      width: 350px;
+      margin: 30px auto;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .form-contenedor h2 {
+      margin-top: 0;
+      margin-bottom: 15px;
+      font-size: 20px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    form label {
+      margin-bottom: 5px;
+      font-size: 14px;
+    }
+
+    form input[type="text"],
+    form input[type="tel"],
+    form input[type="date"],
+    form input[type="email"] {
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      margin-bottom: 10px;
+      font-family: sans-serif;
+    }
+
+    .botones {
+      display: flex;
+      margin-top: 10px;
+    }
+
+    form input[type="submit"],
+    form input[type="reset"] {
+      padding: 8px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    form input[type="submit"] {
+      background-color: #febd69;
+      flex: 1;
+      margin-right: 10px;
+    }
+
+    form input[type="reset"] {
+      background-color: #e7e9ec;
+    }
+    
+    footer {
+      background-color: #131921;
+      color: white;
+      text-align: center;
+      padding: 5px 10px;
+      font-size: 12px;
+      width: 100%;
+      box-sizing: border-box;
+      margin-top: auto;
+    }
+
+    footer p {
+      margin: 3px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div><b>Amazon</b></div>
+    <input type="text" placeholder="Buscar productos..." readonly>
+  </header>
+
+  <nav>
+    <a href="index.html">Inicio</a> | Ofertas | Categorías | Contacto
+  </nav>
+
+  <div class="form-contenedor">
+    <h2>Datos Personales</h2>
+    <form action="index.html" method="get">
+      <label>Nombre completo:</label>
+      <input type="text" name="nombre">
+
+      <label>Número de celular:</label>
+      <input type="tel" name="celular" placeholder="Ej. 6561234567">
+
+      <label>Correo electrónico:</label>
+      <input type="email" name="correo">
+
+      <label>Fecha de nacimiento:</label>
+      <input type="date" name="fecha_nacimiento">
+
+      <label>Lugar de nacimiento:</label>
+      <input type="text" name="lugar_nacimiento">
+
+      <div class="botones">
+        <input type="submit" value="Guardar y Continuar">
+        <input type="reset" value="Borrar">
+      </div>
+    </form>
+  </div>
+
+  <footer>
+    <p>Hernández Mijares Edwin Gael</p>
+    <p>24308051280563 | 5°I</p>
+  </footer>
+
+</body>
+</html>
