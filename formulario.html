@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Iniciar Sesión - Amazon</title>
+  <title>Diseño Estilo Tienda</title>
   <style>
     body {
       font-family: sans-serif;
@@ -58,12 +58,6 @@
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
 
-    .form-contenedor h2 {
-      margin-top: 0;
-      margin-bottom: 15px;
-      font-size: 22px;
-    }
-
     form {
       display: flex;
       flex-direction: column;
@@ -71,8 +65,6 @@
 
     form label {
       margin-bottom: 5px;
-      font-size: 14px;
-      font-weight: bold;
     }
 
     form input[type="text"],
@@ -114,7 +106,7 @@
     }
 
     .seccion-registro p {
-      font-size: 12px;
+      font-size: 13px;
       color: #565959;
       margin-bottom: 10px;
     }
@@ -130,6 +122,7 @@
       text-decoration: none;
       font-size: 13px;
       box-sizing: border-box;
+      text-align: center;
     }
 
     .btn-registrar:hover {
@@ -164,24 +157,22 @@
   </nav>
 
   <div class="form-contenedor">
-    <h2>Iniciar sesión</h2>
-    
-    <form action="" method="get">
-      <label>E-mail o nombre de usuario:</label>
-      <input type="text" name="usuario" required>
+    <form action="index.html" method="get">
+      <label>Ingresa tu usuario:</label>
+      <input type="text" name="usuario">
 
-      <label>Contraseña:</label>
-      <input type="password" name="contraseña" required>
+      <label>Ingresa tu contraseña:</label>
+      <input type="password" name="contraseña">
 
       <div class="botones">
-        <input type="submit" value="Iniciar sesión">
+        <input type="submit" value="Enviar">
         <input type="reset" value="Borrar">
       </div>
     </form>
 
     <div class="seccion-registro">
-      <p>¿Eres nuevo en Amazon?</p>
-      <a href="registro.html" class="btn-registrar">Crea tu cuenta de Amazon</a>
+      <p>¿No tienes cuenta?</p>
+      <a href="registro.html" class="btn-registrar">Registrar</a>
     </div>
   </div>
 
@@ -189,6 +180,9 @@
     <p>Hernández Mijares Edwin Gael</p>
     <p>24308051280563 | 5°I</p>
   </footer>
+
+</body>
+</html>
 
 </body>
 </html>
